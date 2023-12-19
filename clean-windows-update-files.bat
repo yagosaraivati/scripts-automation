@@ -26,3 +26,5 @@ net start wuauserv
 net start bits
 
 pause
+
+:: OBS: O script deve ser executado como Administrador no Windows
