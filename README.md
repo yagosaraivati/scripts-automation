@@ -1,6 +1,6 @@
 # Scripts de automação basica
 
-Esse repositório sera usado para armazenar scripts de automação básica, tanto para Windows / Linux, e disponibilizar para a comunidade
+Esse repositório sera usado para armazenar scripts de automação básica, tanto para Windows quanto para Linux, e disponibilizar para a comunidade
 
 ## 🚀 Começando
 
