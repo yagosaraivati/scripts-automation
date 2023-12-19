@@ -4,8 +4,7 @@ Esse repositório sera usado para armazenar scripts de automação básica, tant
 
 ## 🚀 Começando
 
-1. Script Windows para limpeza de arquivos temporarios do Windows Update
+1. Script para Windows para limpeza de arquivos temporarios do Windows Update
 
-```
 * 📦 [clean-windows-update-files.bat](https://github.com/yagosaraivati/scripts-automation/blob/main/clean-windows-update-files.bat)
-```
+
