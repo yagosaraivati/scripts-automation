@@ -3,14 +3,12 @@ param(
     [string]$Usuario
 )
 
-# Força saída em UTF-8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 Import-Module ActiveDirectory
 
 try {
 
-    # Se não passar o parâmetro, pergunta manualmente
     if (-not $Usuario) {
         $Usuario = Read-Host "Login do usuario?"
     }
