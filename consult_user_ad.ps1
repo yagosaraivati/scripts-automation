@@ -63,5 +63,4 @@ Write-Host "`n" -ForegroundColor DarkGray
 Write-Host "::::::: Compartilhando solucao simples :::::::" -ForegroundColor Cyan
 Write-Host "`n" -ForegroundColor DarkGray
 
-# PAUSA FINAL (impede fechar a janela)
 Read-Host "Pressione ENTER para sair"
