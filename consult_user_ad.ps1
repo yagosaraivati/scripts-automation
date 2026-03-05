@@ -4,6 +4,7 @@ param(
 )
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[DateTime]::FromFileTime($user.lastLogon)
 
 Import-Module ActiveDirectory
 
@@ -13,13 +14,14 @@ try {
         $Usuario = Read-Host "Login do usuario?"
     }
 
-    $user = Get-ADUser -Identity $Usuario -Server "DOMINIO_AQUI" -Properties `
+    $user = Get-ADUser -Identity $Usuario -Server "labnet.local" -Properties `
         MemberOf,
         AccountExpirationDate,
         Enabled,
         PasswordNeverExpires,
         CannotChangePassword,
         PasswordLastSet,
+        lastLogon,
         LockedOut -ErrorAction Stop
 
     Write-Host "`n::::::::::::::::::: DADOS DO USUARIO :::::::::::::::::::" -ForegroundColor Yellow
@@ -40,6 +42,12 @@ try {
     Write-Host "Senha nunca expira: $($user.PasswordNeverExpires)"
     Write-Host "Usuario nao pode alterar senha: $($user.CannotChangePassword)"
     Write-Host "Ultima alteracao de senha: $($user.PasswordLastSet)"
+    if ($user.lastLogon -ne 0) {
+    $lastLogonDate = [DateTime]::FromFileTime($user.lastLogon)
+        Write-Host "Ultimo acesso: $lastLogonDate"
+            } else {
+        Write-Host "Ultimo acesso: Nunca"
+    }
 
     Write-Host "`n::::::::::::::::::: MEMBRO DOS GRUPOS :::::::::::::::::::" -ForegroundColor Yellow
     Write-Host "`n" -ForegroundColor DarkGray
