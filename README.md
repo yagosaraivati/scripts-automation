@@ -16,6 +16,7 @@ Exemplo de resultado do script executado:
 
 <img width="542" height="403" alt="image" src="https://github.com/user-attachments/assets/ed720a2f-9e09-4d4f-9c18-0491bf3a4568" />
 
+
 3. Script que centraliza em um único menu interativo, as rotinas mais usadas no suporte técnico em ambientes Windows
 
 * 📦 [HelpDesk_Toolkit.bat](https://github.com/yagosaraivati/scripts-automation/blob/main/HelpDesk_Toolkit.bat)
