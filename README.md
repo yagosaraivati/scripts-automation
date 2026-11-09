@@ -25,4 +25,14 @@ Exemplo de resultado do script executado:
 
 <img width="643" height="303" alt="Screenshot_1" src="https://github.com/user-attachments/assets/6336752f-a9e2-4a10-9ea2-9ef7ae0aada1" />
 <img width="644" height="987" alt="Screenshot_2" src="https://github.com/user-attachments/assets/c4fc76e7-e77a-4056-93a5-0ac37bae1166" />
+<br><br>
+4. Script que faz uma varredura no servidor AD (Active Directory) e retorna o resultado em formato de pagina HTML
 
+* 📦 [Health-Check-Active-Directory.ps1](https://github.com/yagosaraivati/scripts-automation/blob/main/Health-Check-Active-Directory.ps1)
+
+Exemplo de resultado do script executado:
+
+<img width="1887" height="857" alt="Health-Check-Active-Directory_3" src="https://github.com/user-attachments/assets/ff9e38f8-cb3c-4374-9cac-82cdb8b8093a" />
+<img width="1879" height="885" alt="Health-Check-Active-Directory_2" src="https://github.com/user-attachments/assets/abb0de1a-4a26-40d0-9d9d-a834fad68865" />
+<img width="1880" height="801" alt="Health-Check-Active-Directory" src="https://github.com/user-attachments/assets/085ba137-ebcc-4ffe-8e36-d61619137ccb" />
+<br><br>
